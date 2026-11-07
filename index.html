@@ -10,46 +10,136 @@
 </head>
 <body>
 
-<nav class="navbar">
-  <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li class="dropdown">
-      <a href="#" class="dropbtn">Services ▾</a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Web Design</a></li>
-        <li><a href="#">App Development</a></li>
-        <li><a href="#">SEO & Marketing</a></li>
-      </ul>
-    </li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
-<div class="site-container">
-  <header class="site-header">
-    <h1>Header</h1>
-  </header>
-  
-  <div class="site-body">
-    <aside class="site-sidebar">
-      <nav>
-        <ul>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Analytics</a></li>
-          <li><a href="#">Settings</a></li>
+<!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="logo">Yorn Ratha</span>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#work">WorkIn</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Services ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#"><span class="dot"></span>Web Design</a></li>
+          <li><a href="#"><span class="dot"></span>App Development</a></li>
+          <li><a href="#"><span class="dot"></span>SEO &amp; Marketing</a></li>
         </ul>
-      </nav>
-    </aside>
-    
-    <main class="site-main">
-      <h2>Main Content Area</h2>
-      <p>This is where your primary page content goes.</p>
-    </main>
+      </li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE WRAPPER -->
+  <div class="site-container">
+
+    <!-- HERO HEADER -->
+    <header class="site-header">
+      <span class="eyebrow"><span class="pulse"></span>Available for freelance</span>
+      <h1>Building <span class="gradient-text">digital experiences</span><br>that feel alive.</h1>
+      <p class="lead">
+        I'm Alex — a product designer &amp; front-end engineer crafting
+        clean, animated interfaces for ambitious brands.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">View Work →</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </header>
+
+    <div class="site-body">
+
+      <!-- SIDEBAR -->
+      <aside class="site-sidebar">
+        <p class="sidebar-title">Navigate</p>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 3 5-7"/></svg>
+                Analytics
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="site-main" id="work">
+        <h2>Selected Work</h2>
+        <p>A handful of recent projects — each one built with performance, motion, and detail in mind.</p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="card-tag">Web Design</span>
+            <h3>Nimbus Finance</h3>
+            <p>A calm, data-rich dashboard for a personal finance startup.</p>
+            <span class="arrow">Case study →</span>
+          </article>
+
+          <article class="project-card">
+            <span class="card-tag">App Development</span>
+            <h3>Pulse Fitness</h3>
+            <p>Cross-platform workout tracker with haptic-driven micro-interactions.</p>
+            <span class="arrow">Case study →</span>
+          </article>
+
+          <article class="project-card">
+            <span class="card-tag">Branding</span>
+            <h3>Lumen Studio</h3>
+            <p>Identity system and motion language for a boutique design studio.</p>
+            <span class="arrow">Case study →</span>
+          </article>
+
+          <article class="project-card">
+            <span class="card-tag">SEO &amp; Marketing</span>
+            <h3>Orbit Commerce</h3>
+            <p>Headless storefront rebuild that lifted organic traffic by 47%.</p>
+            <span class="arrow">Case study →</span>
+          </article>
+
+          <article class="project-card">
+            <span class="card-tag">Computer Shope</span>
+            <h3>Orbit Commerce</h3>
+            <p>Headless storefront rebuild that lifted organic traffic by 47%.</p>
+            <span class="arrow">Case study →</span>
+          </article>
+
+        <article class="project-card">
+            <span class="card-tag">Laptop Computer</span>
+            <h3>Orbit Commerce</h3>
+            <p>Headless storefront rebuild that lifted organic traffic by 47%.</p>
+            <span class="arrow">Case study →</span>
+          </article>
+        
+          <article class="project-card">
+            <span class="card-tag">Desktop Computer</span>
+            <h3>Orbit Commerce</h3>
+            <p>Headless storefront rebuild that lifted organic traffic by 47%.</p>
+            <span class="arrow">Case study →</span>
+          </article>
+
+        </div>
+      </main>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+      <p>© 2026 Yorn Ratha · Crafted with care · <a href="#">hello@yornratha.com</a></p>
+    </footer>
+
   </div>
-  
-  <footer class="site-footer">
-    <p>Footer Information</p>
-  </footer>
-</div>
 </body>
 </html>
